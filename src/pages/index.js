@@ -7,16 +7,21 @@ import "../styles/styles.css"
 const ToothAche = ({ data }) => {
   const twitterHandle = ""
   const tags = []
-
+  const refLink = "#"
   const banner = data?.banner?.childImageSharp?.fluid
   const bottle = data?.bottle?.childImageSharp?.fluid
   const main = data?.main?.childImageSharp?.fluid
+  const outro = data?.outro?.childImageSharp?.fluid
+  const pack = data?.pack?.childImageSharp?.fluid
+  const banner2 = data?.banner2?.childImageSharp?.fluid
+
   return (
     <div className="wrap">
       <div className="header">
-        {/*   <Image fluid={logo} alt="logo" className="logo" /> */}
         <div className="brand">
-          <h1 className="brand-title">🔎Keen Reviews🔍</h1>
+          <h1 className="brand-title">
+            <span>🔎</span> Reviews Experts<span> 🔍</span>
+          </h1>
         </div>
       </div>
       <div className="body-wrap">
@@ -24,17 +29,19 @@ const ToothAche = ({ data }) => {
           <div className="presentation">
             <h1 className="name">Vital Flow Review</h1>
             <div className="product-meta">
-              <p>created by: Sam Morgan</p>
-              <p> review date: 02 October 2020</p>
-              <p> Health care </p>
-              <p> 102 shares </p>
+              <p> Created By: Sam Morgan</p>
+              <p> Review Date: 02 October 2020</p>
+              <p> Health Care </p>
+              <p> 107 shares </p>
               <p>
                 <span role="img" aria-label="5 stars review">
                   ⭐⭐⭐⭐⭐
                 </span>
               </p>
             </div>
-            <Image fluid={main} alt="main" />
+            <a href={refLink} target="_blank" rel="noreferrer">
+              <Image fluid={main} alt="main" />
+            </a>
 
             <div className="subtitle fancy">
               <span>
@@ -57,19 +64,6 @@ const ToothAche = ({ data }) => {
                 only the prostate and nearby organs. This is referred to as the
                 local or regional stage. Median age at diagnosis was 68 years.
               </p>
-              <p>
-                9% of patients were diagnosed between ages 45 and 54. 29%
-                between 55 and 64. 36% between 65 and 74. 21% between 75 and 84.
-                5% at 85 or older. Overall annual incidence was 159.3 per
-                100,000 men
-              </p>
-
-              <p>
-                During this period, the median age at death from PC was 80
-                years, with 7% of deaths occurring between ages 55 and 64. 20%
-                between 65 and 74. 41% between 75 and 84. and 30% at 85 or
-                older. Overall annual death rate was 25.6 per 100,000 men.
-              </p>
             </div>
           </div>
           <div>
@@ -84,8 +78,8 @@ const ToothAche = ({ data }) => {
                   VitalFlow is the only solution to your prostate issues. It is
                   an all-natural dietary supplement that treats the root cause
                   of prostate problems.When testosterone gets converted into
-                  dihydrotestosterone called DHT. they create problems with
-                  androgen
+                  dihydrotestosterone called <strong>DHT</strong>. they create
+                  problems with androgen
                 </p>
 
                 <p>
@@ -118,7 +112,7 @@ const ToothAche = ({ data }) => {
             <div className="ingredients">
               <p>
                 There are <strong>34 natural ingredients</strong> in Vital Flow
-                and I am going to tell you about each one of them…
+                and Here are few on the list …
               </p>
               <ol style={{ listStyle: "none" }}>
                 <li>
@@ -171,115 +165,187 @@ const ToothAche = ({ data }) => {
                     This helps in the process of relieving prostate issues.
                   </p>
                 </li>
+
                 <li>
                   <p>
-                    <strong>Stinging Nettle Root:</strong> This root is said to
-                    be a manhood booster. You may have heard of this ingredient
-                    as a testosterone boosting agent. It boosts the good
-                    testosterone and doesn’t let it convert in{" "}
-                    <strong>DHT</strong>.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Red Raspberry Extract:</strong> It helps you remain
-                    in the mood, boosts your sex drive, desire and vitality.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Natural Green Tea:</strong> Green tea is always good
-                    but when it is natural, it is even better. It helps flush
-                    out the toxins in urine so your prostate glands are relaxed
-                    and reduced in size.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Broccoli Leaf Extracts:</strong> The nutritional
-                    value of broccoli leaf extracts is so high it can easily
-                    diminish prostate problems, that too without causing any
-                    side-effects.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Selenium:</strong> Selenium helps the hidden{" "}
-                    <strong>DHT</strong> come out from its hiding so the other
-                    nutrients and your immunity can defeat it.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Vitamin E:</strong> Vitamin E is said to enhance
-                    your overall health and protect you from falling ill.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Vitamin B6:</strong> Vitamin B6 kills any bacteria
-                    that enters your body so you never have to worry about
-                    bacterial infections down there.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Zinc:</strong> Zinc protects your prostate from{" "}
-                    <strong>DHT’s</strong> attacks so you never have to worry
-                    about peeing in your underwear again.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Copper:</strong> Copper protects you from prostate
-                    cancer and prevents prostate problems from getting worse.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Plant Sterol Complex:</strong> It helps you keep
-                    away from the danger of getting prostate problems once
-                    cured.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>15 more herbs:</strong> A blend of these herbs will
-                    manage, maintain and balance your body’s hormones and fight
-                    off bacteria and <strong>DHT</strong> production.
+                    <strong> ... </strong> To read more about all the
+                    ingredients that exist in this formula, The{" "}
+                    <a href={refLink}>official website</a> has a detailed list
+                    with all the information about the ingredients that we can
+                    not list all in one summary for the sake of the review.
                   </p>
                 </li>
               </ol>
-              <div className="banner1">
-                <Image fluid={banner} alt="banner product" />
+
+              <div className="btn-wrap">
+                <a
+                  className="btn"
+                  href="https://fabining-polives.icu/click"
+                  target="_blank"
+                >
+                  Go to The Official Website
+                </a>
               </div>
             </div>
           </div>
+
           <div>
-            --Pros Cons--
-            <div style={{ display: "flex" }}>
-              <ul>
-                <li>
-                  <p>hellohello</p>
-                </li>
-                <li>
-                  <p>hellohello</p>
-                </li>
-                <li>
-                  <p>hellohello</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <p>hellohello</p>
-                </li>
-                <li>
-                  <p>hellohello</p>
-                </li>
-                <li>
-                  <p>hellohello</p>
-                </li>
-              </ul>
+            <div className="subtitle fancy">
+              <span>
+                <h1>How Does It Work ?</h1>
+              </span>
+            </div>
+            <div className="how">
+              <p>
+                Vital Flow supplement reduce the size of the prostate gland and
+                bring it back to normal. The use of natural ingredients ensures
+                that older adults won’t experience any side effects that
+                accompany surgical treatments and other medicinal procedures.
+              </p>
+              <p>
+                When DHT levels rise higher than the average amount, the
+                prostate gland may enlarge. Your body should respond accordingly
+                and decrease the size. But, inflammation results in poor
+                functioning of the body, and thus, your prostate gland will
+                remain swollen. Perhaps inflammation results in more pain and
+                swelling.
+              </p>
+              <p>
+                When you start taking VitalFlow it will not take long to notice
+                the change. In the first days the formula get absorbed at a fast
+                pace due to the ingredients being all natural and green. when
+                absorbed it will Stimulate your body to flush the built up
+                DHT.therefore allowing the blood to be purified just like
+                before. when your penile chambers are fed with purified and
+                oxygenated blood,
+              </p>
+              <p>
+                You will start peeing at a regular rate without difficulties and
+                gaining back control of your bladder slowly. with the continuous
+                use of VitalFlow your body will not start building up DHT again,
+                this will stop any future inflammation of the prostate gland.
+                and you can finally say goodbye to all your prostate problems
+              </p>
+            </div>
+          </div>
+          {/* <div>
+            <div className="subtitle fancy">
+              <span>
+                <h1>Features</h1>
+              </span>
+            </div>
+            <div className="container">
+              <div className="bar learning" data-skill="TDD"></div>
+              <div className="bar back basic" data-skill="Python"></div>
+              <div className="bar back intermediate" data-skill="C#"></div>
+              <div className="bar front advanced" data-skill="CSS3"></div>
+              <div className="bar front expert" data-skill="HTML5"></div>
+            </div>
+          </div> */}
+          <div>
+            <h1 style={{ textAlign: "center" }}>PROs & CONs</h1>
+            <div className="procon-wrap">
+              <div className="procon">
+                <ul className="pros">
+                  <li>
+                    <p>
+                      VitalFlow is Made of 100% natural, Scientifically-Backed
+                      ingredients with no side effects reported to date
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Moreover, The Formula will boost your energy levels,
+                      libido and metabolism.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Doesn’t require you to go through painful injections or
+                      surgery
+                    </p>
+                  </li>
+                  <li>
+                    <p>60-day 100% money-back guarantee</p>
+                  </li>
+                </ul>
+                <ul className="cons">
+                  <li>
+                    <p>
+                      Only available online, which makes it accessible for only
+                      a set of people
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Minors can’t take this medicine, although prostate issues
+                      are rare in people below 18.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Discounted rates come only with bulk purchases</p>
+                  </li>
+                  <li>
+                    <p>Stock limited production</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="subtitle fancy">
+              <span>
+                <h1>Work for Everyone?</h1>
+              </span>
+            </div>
+            <div className="text-wrap">
+              <p>
+                No, the supplement only works for adult men. Minors shouldn’t
+                use this product. Moreover, it only solves prostate issues, and
+                only older adults suffer from this issue most of the time.
+                Otherwise, all the ingredients used in the product are entirely
+                natural. It won’t adversely affect any individual. If you are
+                suffering from any prostate problem, this is the most viable
+                solution you can have.
+              </p>
+            </div>
+            <div class="pack-wrap">
+              <a href={refLink} rel="noreferrer" target="_blank">
+                <Image fluid={banner} alt="bottle pack" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <div className="subtitle fancy">
+              <span>
+                <h1>Where To Get It</h1>
+              </span>
+            </div>
+            <div className="text-wrap">
+              <p>
+                VitalFlow is only available online on the{" "}
+                <a href="">Official Website</a> ,There is a discount and the
+                manufacturer also provide a money back guaranteed policy.just be
+                sure to get your package from the official website as this
+                product is only sold online. i will leave a link below.
+              </p>
+            </div>
+
+            <div className="outro-wrap">
+              <a href={refLink} rel="noreferrer" target="_blank">
+                <Image fluid={outro} alt="banner" />
+              </a>
+            </div>
+            <div class="pack-wrap">
+              <a href={refLink} rel="noreferrer" target="_blank">
+                <Image fluid={pack} alt="bottle pack" />
+              </a>
+            </div>
+            <div class="pack-wrap">
+              <a href={refLink} rel="noreferrer" target="_blank">
+                <Image fluid={banner2} alt="bottle pack" />
+              </a>
             </div>
           </div>
         </div>
@@ -325,7 +391,7 @@ export const query = graphql`
 
     pack: file(absolutePath: { regex: "/pack.png/" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
@@ -333,7 +399,7 @@ export const query = graphql`
 
     outro: file(absolutePath: { regex: "/outro.png/" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 960) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
