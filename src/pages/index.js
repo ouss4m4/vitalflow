@@ -7,9 +7,9 @@ import "../styles/styles.css"
 const ToothAche = ({ data }) => {
   const twitterHandle = ""
   const tags = []
-  const refLink = "#"
+  const refLink = "https://fabining-polives.icu/click"
   const banner = data?.banner?.childImageSharp?.fluid
-  const bottle = data?.bottle?.childImageSharp?.fluid
+  const bottle3 = data?.bottle3?.childImageSharp?.fluid
   const main = data?.main?.childImageSharp?.fluid
   const outro = data?.outro?.childImageSharp?.fluid
   const pack = data?.pack?.childImageSharp?.fluid
@@ -39,6 +39,20 @@ const ToothAche = ({ data }) => {
                 </span>
               </p>
             </div>
+
+            <Share
+              round={true}
+              center={true}
+              socialConfig={{
+                twitterHandle,
+                config: {
+                  url: `https://vitalflow.reviews-experts.com`,
+                  title: "Gum Bleeding Remedy",
+                },
+              }}
+              tags={tags}
+            />
+
             <a href={refLink} target="_blank" rel="noreferrer">
               <Image fluid={main} alt="main" />
             </a>
@@ -99,7 +113,7 @@ const ToothAche = ({ data }) => {
                 </p>
               </div>
               <div className="product-image">
-                <Image fluid={bottle} alt="3 bottles of vitalflow" />
+                <Image fluid={bottle3} alt="3 bottles of vitalflow" />
               </div>
             </div>
           </div>
@@ -178,11 +192,7 @@ const ToothAche = ({ data }) => {
               </ol>
 
               <div className="btn-wrap">
-                <a
-                  className="btn"
-                  href="https://fabining-polives.icu/click"
-                  target="_blank"
-                >
+                <a className="btn" href={refLink} target="_blank">
                   Go to The Official Website
                 </a>
               </div>
@@ -347,6 +357,18 @@ const ToothAche = ({ data }) => {
                 <Image fluid={banner2} alt="bottle pack" />
               </a>
             </div>
+            <Share
+            center={true}
+            round={true}
+              socialConfig={{
+                twitterHandle,
+                config: {
+                  url: `https://vitalflow.reviews-experts.com`,
+                  title: "Gum Bleeding Remedy",
+                },
+              }}
+              tags={tags}
+            />
           </div>
         </div>
       </div>
@@ -358,7 +380,7 @@ export default ToothAche
 
 export const query = graphql`
   query {
-    bottles3: file(absolutePath: { regex: "/3bottles.png/" }) {
+    bottle3: file(absolutePath: { regex: "/3bottles.png/" }) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64

@@ -12,11 +12,11 @@ import {
   FacebookMessengerIcon,
 } from "react-share"
 
-const Share = ({ socialConfig, tags, round }) => (
+const Share = ({ socialConfig, tags, round, center }) => (
   <div
     style={{
       display: "flex",
-      justifyContent: "flex-start",
+      justifyContent: center ? "center" : "flex-start",
       alignItems: "center",
     }}
   >

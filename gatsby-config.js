@@ -7,10 +7,10 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Product Review`,
+    title: `Reviews Experts`,
     description: `Before You Buy, Read This Review, And Evaluate The Pros & Cons`,
-    siteUrl: `https://gum-remedy.com`,
-    url: `https://gum-remedy.com`,
+    siteUrl: `https://vitalflow.reviews-experts.com/`,
+    url: `https://vitalflow.reviews-experts.com/`,
     twitterHandle: "",
   },
   plugins: [
