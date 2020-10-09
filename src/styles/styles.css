@@ -288,3 +288,62 @@ ul.cons p::before {
   position: relative;
   top: 1px;
 }
+
+@media screen and (max-width: 600px) {
+  .brand-title {
+    font-size: 1.3em;
+  }
+  .presentation .name {
+    margin-top: 1em;
+    text-align: center;
+  }
+  .product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-meta p {
+    border: none;
+    font-size: 0.8em;
+    display: inline;
+    color: rgb(54, 52, 52);
+    padding: 5px;
+  }
+
+  .introduction p,
+  .description p,
+  .ingredients p,
+  .how p,
+  .text-wrap p {
+    padding: 4px 6px;
+    text-align: initial;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.003em;
+  }
+  .img-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-image {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    align-self: center;
+  }
+  .description {
+    width: auto;
+  }
+  .ingredients ol {
+    margin: 0;
+  }
+
+  .procon {
+    display: flex;
+    flex-direction: column;
+  }
+  .pros,
+  .cons {
+    width: auto;
+  }
+}

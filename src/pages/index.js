@@ -30,7 +30,7 @@ const ToothAche = ({ data }) => {
             <h1 className="name">Vital Flow Review</h1>
             <div className="product-meta">
               <p> Created By: Sam Morgan</p>
-              <p> Review Date: 02 October 2020</p>
+              <p> Review Date: 02 Oct 2020</p>
               <p> Health Care </p>
               <p> 107 shares </p>
               <p>
@@ -77,8 +77,8 @@ const ToothAche = ({ data }) => {
                 <p>
                   VitalFlow is the only solution to your prostate issues. It is
                   an all-natural dietary supplement that treats the root cause
-                  of prostate problems.When testosterone gets converted into
-                  dihydrotestosterone called <strong>DHT</strong>. they create
+                  of prostate problems. When testosterone gets converted into
+                  Dihydrotestosterone called <strong>DHT</strong>. they create
                   problems with androgen
                 </p>
 
